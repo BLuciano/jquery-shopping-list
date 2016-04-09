@@ -1,24 +1,34 @@
 $(document).ready(function(){
-	//Add item to top of shopping list if field is not empty
-	$(".add").click(function(){
-		var $item = $("#newItem").val();
-		if($item !== ""){
-			$(".shopping-list").prepend(
-				"<li class='item'>" +
-				"<i class='fa fa-square-o fa-2x status'></i>" +
-				"<p class='shopping-item'>" + $item + "</p>" +
-				"<input type='text' class='shopping-item' value='" + $item + "'></input>" +
-				"<i class='fa fa-trash fa-2x trash'></i></li>"
-			);
-			$("#newItem").val("");
-		}
-	});
-
+	$("body").on('click', '.add', addItem);
 	$("body").on('click', '.trash', removeItem);
 	$("body").on('click', '.status', toggleChecked);
 	$("body").on('click', '.item p', showEditable);
 	$("body").on('focusout', '.item input', closeEditable);
+
+	//Allows for enter key to be used whne adding new items
+	$(document).keypress(function(e){
+		if(e.which === 13){
+			if($('.add').focus()){
+				addItem();
+			}
+		}
+	});
 });
+
+//Adds new item to the shopping list
+function addItem(){
+	var $item = $("#newItem").val();
+	if($item !== ""){
+		$(".shopping-list").prepend(
+			"<li class='item'>" +
+			"<i class='fa fa-square-o fa-2x status'></i>" +
+			"<p class='shopping-item'>" + $item + "</p>" +
+			"<input type='text' class='shopping-item' value='" + $item + "'></input>" +
+			"<i class='fa fa-trash fa-2x trash'></i></li>"
+		);
+		$("#newItem").val("");
+	}
+}
 
 // remove item from shopping list
 function removeItem(){
