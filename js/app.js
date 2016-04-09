@@ -17,6 +17,7 @@ $(document).ready(function(){
 	$("body").on('click', '.trash', removeItem);
 	$("body").on('click', '.status', toggleChecked);
 	$("body").on('click', '.item p', showEditable);
+	$("body").on('focusout', '.item input', closeEditable);
 });
 
 // remove item from shopping list
@@ -24,7 +25,7 @@ function removeItem(){
 	$(this).parent().remove();
 }
 
-//Toggles checked off state on list items{
+//Toggles checked off state on list items
 function toggleChecked(){
 	if($(this).hasClass("fa-square-o")){
 		$(this).removeClass("fa-square-o");
@@ -37,7 +38,8 @@ function toggleChecked(){
 	}
 }
 
-//Allows for user to edit the shopping list items.
+//Allows for user to edit the shopping list items 
+//if they are not checked off
 function showEditable(){
 	if(!$(this).hasClass("checked")){
 		$(this).hide();
@@ -45,3 +47,9 @@ function showEditable(){
 	}
 }
 
+//Closes editable form on shopping list items and updates shopping list
+function closeEditable(){
+	var newItem = $(this).val();
+	$(this).hide();
+	$(this).prev().text(newItem).show();
+}
