@@ -11,6 +11,17 @@ $(document).ready(function(){
 				"<i class='fa fa-trash fa-2x trash'></i></li>"
 			);
 			$("#newItem").val("");
+			$(".trash").click(removeItem);
 		}
 	});
+
+	//Add click event handler to remove item
+	$(".trash").click(function(){
+		removeItem;
+	});
 });
+
+// remove item from shopping list
+function removeItem(){
+	$(this).parent().remove();
+}
