@@ -33,15 +33,34 @@ html {
 .add{
 
 }
-.fa-plus-square{
-	position: relative;
-	color: orange;
-	top: 12px;
-	cursor: pointer;
-}
+
 /*SHOPPING LIST SECTION*/
 .shopping-list{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+.item{
+	padding: .5em 0;
+}
+
+/*ICONS SECTION*/
+.fa-plus-square, .fa-trash, .fa-square-o, .fa-check-square-o{
+	position: relative;
+	color: orange;
+	top: 12px;
+	cursor: pointer;
+}
+
+.fa-check-square-o{
+	color: green;
+}
+
+.fa-trash{
+	color: red;
+}
+
+.fa-square-o{
+	color: #ccc;
 }
