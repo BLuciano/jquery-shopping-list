@@ -31,10 +31,14 @@ function toggleChecked(){
 		$(this).removeClass("fa-square-o");
 		$(this).addClass("fa-check-square");
 		$(this).siblings('p').addClass("checked");
+		//Move item to bottom of the list
+		$(".shopping-list").append($(this).parent());
 	} else{
 		$(this).removeClass("fa-check-square");
 		$(this).addClass("fa-square-o");
 		$(this).siblings('p').removeClass("checked");
+		//Move item to top of list
+		$(".shopping-list").prepend($(this).parent());
 	}
 }
 
