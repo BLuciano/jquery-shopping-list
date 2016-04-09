@@ -45,22 +45,35 @@ html {
 	padding: .5em 0;
 }
 
+.shopping-item{
+	width: 75%;
+	padding: .5em;
+	margin: 0 5px;
+}
+
 /*ICONS SECTION*/
-.fa-plus-square, .fa-trash, .fa-square-o, .fa-check-square-o{
+.fa-plus-square, .fa-trash, .fa-square-o, .fa-check-square{
 	position: relative;
 	color: orange;
 	top: 12px;
 	cursor: pointer;
 }
+.fa-trash, .fa-square-o, .fa-check-square{
+	top: 7px;
+}
 
-.fa-check-square-o{
-	color: green;
+.fa-check-square{
+	color: #00802b;
 }
 
 .fa-trash{
-	color: red;
+	color: #990000;
 }
 
 .fa-square-o{
 	color: #ccc;
+}
+
+.checked{
+	text-decoration: line-through;
 }
