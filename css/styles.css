@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 *, *:before, *:after {
@@ -8,6 +9,11 @@ html {
 
 .center{
 	text-align: center;
+}
+
+h1{
+	color: #fff;
+	font-size: 2.5em;
 }
 
 /*WRAPPER SECTION*/
@@ -55,7 +61,7 @@ html {
 .fa-plus-square, .fa-trash, .fa-square-o, .fa-check-square{
 	position: relative;
 	color: orange;
-	top: 12px;
+	top: 10px;
 	cursor: pointer;
 }
 .fa-trash, .fa-square-o, .fa-check-square{
@@ -76,4 +82,6 @@ html {
 
 .checked{
 	text-decoration: line-through;
+	color: #666;
+	font-weight: 300;
 }
