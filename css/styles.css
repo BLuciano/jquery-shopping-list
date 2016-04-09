@@ -68,11 +68,11 @@ input.shopping-item{
 .fa-plus-square, .fa-trash, .fa-square-o, .fa-check-square{
 	position: relative;
 	color: orange;
-	top: 10px;
 	cursor: pointer;
+	vertical-align: top;
 }
 .fa-trash, .fa-square-o, .fa-check-square{
-	top: 7px;
+	top: 6px;
 }
 
 .fa-check-square{
@@ -91,4 +91,11 @@ input.shopping-item{
 	text-decoration: line-through;
 	color: #666;
 	font-weight: 300;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 800px){
+	.wrapper{
+		width: 800px;
+	}
 }
