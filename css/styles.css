@@ -10,6 +10,7 @@ html {
 	text-align: center;
 }
 
+/*WRAPPER SECTION*/
 .wrapper{
 	width: 100%;
 	height: auto;
@@ -20,6 +21,25 @@ html {
 	background-color: #333;
 }
 
+/*ADD NEW ITEM SECTION*/
+.add-item{
+	margin-bottom: 3em;
+}
+
+#newItem{
+	width: 75%;
+	padding: .5em;
+}
+.add{
+
+}
+.fa-plus-square{
+	position: relative;
+	color: orange;
+	top: 12px;
+	cursor: pointer;
+}
+/*SHOPPING LIST SECTION*/
 .shopping-list{
 	list-style: none;
 	margin: 0;
