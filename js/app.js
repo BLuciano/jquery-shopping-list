@@ -16,6 +16,7 @@ $(document).ready(function(){
 
 	$("body").on('click', '.trash', removeItem);
 	$("body").on('click', '.status', toggleChecked);
+	$("body").on('click', '.item p', showEditable);
 });
 
 // remove item from shopping list
@@ -35,3 +36,12 @@ function toggleChecked(){
 		$(this).siblings('p').removeClass("checked");
 	}
 }
+
+//Allows for user to edit the shopping list items.
+function showEditable(){
+	if(!$(this).hasClass("checked")){
+		$(this).hide();
+		$(this).next().show().focus();
+	}
+}
+

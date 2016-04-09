@@ -90,7 +90,6 @@ input.shopping-item{
 .checked{
 	text-decoration: line-through;
 	color: #666;
-	font-weight: 300;
 }
 
 /*MEDIA QUERIES*/
