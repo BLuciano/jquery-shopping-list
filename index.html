@@ -5,46 +5,46 @@
 	<title>Todo App</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<style type="text/css" href="css/normalize.css"></style>
-	<style type="text/css" href="css/styles.css"></style>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper center">
 		<h1>SHOPPING LIST</h1>
 		<div class="add-item">
 			<input type="text" id="newItem" placeholder="Add New Item"></input>
 			<button class="add">ADD</button>
 		</div>
 
-		<div class="shopping-list">
-			<div class="item">
+		<ul class="shopping-list">
+			<li class="item">
 				<button class="done">done</button>
 				<input type="text" class="shopping-item" value="ITEM 1"></input>
 				<button class="trash">Trash</button>
-			</div>
-			<div class="item">
+			</li>
+			<li class="item">
 				<button class="done">done</button>
 				<input type="text" class="shopping-item" value="ITEM 2"></input>
 				<button class="trash">Trash</button>
-			</div>
-			<div class="item">
+			</li>
+			<li class="item">
 				<button class="done">done</button>
 				<input type="text" class="shopping-item" value="ITEM 3"></input>
 				<button class="trash">Trash</button>
-			</div>
-			<div class="item">
+			</li>
+			<li class="item">
 				<button class="done">done</button>
 				<input type="text" class="shopping-item checked" value="ITEM 4"></input>
 				<button class="trash">Trash</button>
-			</div>
-			<div class="item">
+			</li>
+			<li class="item">
 				<button class="done">done</button>
 				<input type="text" class="shopping-item checked" value="ITEM 5"></input>
 				<button class="trash">Trash</button>
-			</div>
-		</div>
+			</li>
+		</ul>
 		<script src="http://code.jquery.com/jquery.min.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
+		<script src="js/app.js"></script>
 	</div>
 </body>
 </html>
