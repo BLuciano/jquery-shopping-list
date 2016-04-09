@@ -55,6 +55,13 @@ h1{
 	width: 75%;
 	padding: .5em;
 	margin: 0 5px;
+	display: inline-block;
+	background-color: #fff;
+	text-align: left;
+}
+
+input.shopping-item{
+	display: none;
 }
 
 /*ICONS SECTION*/
